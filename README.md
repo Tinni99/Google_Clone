@@ -1,2 +1,2 @@
 # Google_Clone
-A front-end replica of Google Search, Google's Advanced Search and Google Images Search pages
+This project replicates the user interface of Google Search, including the Advanced Search and Image Search functionalities. It uses basic HTML and CSS to create a clean, responsive design that mimics Google's layout.
