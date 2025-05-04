@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google</title>
+        <style>
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .navigation {
+                display: flex;
+                padding: 6px;
+                justify-content: flex-end;
+                height: 60px;
+            }
+            .div {
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            .navigation a {
+              color: #5f6368;
+              text-decoration: none;
+              padding: 10px;
+              margin-right: 20px;
+            }
+            .navigation a:hover {
+              text-decoration: underline;
+            }
+            .logo1 {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              min-height: 92px;
+              height: calc(100% - 560px);
+              max-height: 290px;
+            }
+            .logo2 {
+              max-height: 92px;
+              position: relative;
+              height: 100%;
+              margin-top: auto;
+            }
+            .logo2 img {
+              max-height: 100%;
+              max-width: 100%;
+              object-fit: contain;
+              object-position: center bottom;
+              width: auto;              
+            }
+            .search-bar {
+              padding: 20px;
+              max-height: 160px;
+            }
+            form {
+              display: block;
+              margin-top: 0em;
+            }
+            for div {
+              display: block;
+            }
+            .form {
+              margin: 0 auto;
+              width: auto;
+              max-width: 584px;
+              padding-top: 6px;
+              position: relative;
+            }
+            .search-area {
+              display: flex;
+              z-index: 3;
+              position: relative;
+              min-height: 44px;
+              background: #fff;
+              border: 1px solid #dfe1e5;
+              box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+              border-radius: 24px;
+              margin: 0 auto;
+              width: auto;
+              max-width: 584px;
+            }
+            .search-area:hover {
+                box-shadow: 0 2px 8px 1px rgba(64, 60, 67, 0.24);
+            }
+            .search-area2 {
+              flex: 1;
+              display: flex;
+              padding: 0 8px 0 0;
+            }
+            .icon-box {
+              display: flex;
+              align-items: center;
+              padding-right: 13px;
+              padding-left: 14px;
+              height: 46px;
+            }
+            .icon-area {
+              margin: auto;
+            }
+            .icon {
+              margin-top: 3px;
+              color: #9aa0a6;
+              display: inline-block;
+              fill: currentColor;
+              position: relative;
+            }
+            .icon svg {
+              display: block;
+              height: 100%;
+              width: 100%;
+            }
+            .text-box {
+              display: flex;
+              flex-wrap: wrap;
+              flex: 1;
+            }
+            .text-box input[type="text"] {
+              font-family: Arial, sans-serif;
+              line-height: 22px;
+              border-bottom: 8px solid transparent;
+              padding-top: 8px;
+              overflow-x: hidden;
+            }
+            .text {
+              resize: none;
+              background-color: transparent;
+              border: none;
+              margin: 0;
+              padding: 0;
+              color: rgba(0, 0, 0, 0.87);
+              word-wrap: break-word;
+              outline: none;
+              display: flex;
+              font-size: 16px;
+              flex: 100%;
+              cursor: text;
+              text-align: start;
+            }
+            .button-area {
+              height: 70px;
+              padding-top: 18px;
+            }
+            .button-area input[type="submit"] {
+              background-color: #f8f9fa;
+              border: 1px solid #f8f9fa;
+              border-radius: 4px;
+              color: #3c4043;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 14px;
+              margin: 11px 4px;
+              padding: 0 16px;
+              line-height: 27px;
+              height: 36px;
+              min-width: 54px;
+              text-align: center;
+              cursor: pointer;
+              user-select: none;
+            }
+            input[type="submit"]:hover {
+                border: 1px solid #ccc;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div navigation" role="navigation">
+              <a href="image.html">Image Search</a>
+              <a href="advanced.html">Advanced Search</a>
+            </div>
+            <div class="div logo1">
+              <div class="logo2">
+                <img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272">
+              </div>
+            </div>
+            <div class="div search-bar">
+              <form action="https://www.google.com/search" method="GET" role="search">
+                <div>
+                  <div class="form">
+                    <div class="search-area">
+                      <div class="search-area2">
+                        <div class="icon-box">
+                          <div class="icon-area">
+                            <span class="icon" style="height: 20px;line-height: 20px;width: 20px;">
+                              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="text-box">
+                          <input class="text" type="text" name="q" role="combobox">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-area">
+                      <center>
+                        <input value="Google Search" name="btnK" role="button" type="submit">
+                        <input value="I'm Feeling Lucky" name="btnI" role="button" type="submit">
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </body>
+</html>
